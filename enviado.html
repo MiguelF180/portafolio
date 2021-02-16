@@ -1,0 +1,82 @@
+    <div class="model">
+      <!--img src="../image/<?php
+      if($verificar){
+        echo"true.png";
+      }
+      else{
+        echo"false.png";
+      }
+      ?>" width="200px">
+    </div>
+    <div class="text">
+      <p>Pues <?php  echo $usuario;
+      ?> 
+      <?php
+      if($verificar){
+       echo "Su mensaje se ha enviado con exito, pronto le enviare respuesta";
+      }
+      else{
+        echo" Lo lamento pero parece que ha ocurrido un error";
+      }
+      ?>
+     </p>
+      
+      
+      <a href="index.html"><button>Volver</button></a-->
+      
+       <?php
+     
+      if($verificar){
+        echo'
+      <style>
+      .model{
+        display:block;
+      }
+      </style>
+      <img src="image/true.png" width="200px">
+      
+      <p>Su mensaje ha sido enviado con exito</p>
+      
+      <button id="btnclose">Cerrar</button>
+        ';
+      }
+      else{
+       echo'
+         <style>
+      .model{
+        display:block;
+      }
+      </style>
+     <img src="image/false.png"/>
+     <p>Su mensaje no se pudeo enviar intentelo mas tarde</p>
+      <button id="btnclose">Cerrar</button>
+     ';
+      }
+    
+    ?>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+     
+      <img src="image/true.png" width="200px">
+      
+      <p>Su mensaje ha sido enviado con exito</p>
+      
+      <button id="btnclose">Cerrar</button>
+    </div>
+    <script type="text/javascript" charset="utf-8">
+      const d=document;
+      const btnclose=document.getElementById('btnclose');
+      
+      btnclose.addEventListener('click',function(){
+        d.getElementsByClassName('model')[0].style.display='none';
+      })
+    </script>

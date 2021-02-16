@@ -1,0 +1,36 @@
+.hidden{
+  overflow:hidden;
+}
+.canvas{
+  position:fixed;
+  top:0;
+  display:flex;
+  flex-wrap:wrap;
+  width:100vw;
+  height:100vh;
+  z-index:10000;
+}
+.canvas div{
+  width:50vw;
+  height:100vh;
+}
+.one{
+  position:relative;
+  background:rgb(68,90,255);
+}
+.two{
+  position:relative;
+  background:rgb(68,90,255);
+  z-index:11000;
+}
+.playerL{
+  position:fixed;
+  width:100px;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  margin:auto;
+  transition:500ms all;
+  z-index:12000;
+}
